@@ -48,13 +48,13 @@ margin: auto;}
     background-color: var(--cor1);}
 
 main{
-flex: 1;
-background-image: url(cogumelosfundo.jpg);
-background-size: cover;
-padding:5%;
-margin: 10px 0px;
-padding-top: 100px;
-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);}
+    flex: 1;
+    background-image: url(cogumelosfundo.jpg);
+    background-size: cover;
+    padding:5%;
+    margin: 10px 0px;
+    padding-top: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);}
 
 main h1{
     color: white;
