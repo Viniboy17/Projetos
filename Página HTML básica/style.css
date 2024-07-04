@@ -10,8 +10,8 @@
     --cor3:#1FF0C3;
     --cor4:#477067;}
 
-html, body {
-    height: 100%;}
+    html, body {
+        height: 100%;}
 
 body{
     display: flex;
@@ -32,14 +32,14 @@ header{
     padding: 20px 0px;}
 
 .nave{
-margin: auto;}
+    margin: auto;
+    }
 
 .nave a{
     color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    margin: auto;
     padding: 10px}
 
 .nave a:hover{
