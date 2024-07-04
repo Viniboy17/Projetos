@@ -26,6 +26,7 @@ body{
     
 
 header{
+    font-size: 2vw;
     background-color: var(--cor3);
     display: flex;
     flex-direction: row;
@@ -38,9 +39,9 @@ header{
 .nave a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
     font-weight: bold;
-    padding: 10px}
+    padding: 10px;
+   }
 
 .nave a:hover{
     border-radius: 10px;
