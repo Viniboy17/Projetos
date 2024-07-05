@@ -71,3 +71,24 @@ ol{
     columns: 2;
     list-style-type: none;
     margin-top: 20px;}
+
+footer{
+    position: absolute;
+    background-color: hsl(30, 6%, 44%);
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
