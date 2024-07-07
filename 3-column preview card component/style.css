@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+        body{
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+            background-color: antiquewhite;}
+
+        #Tudo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: aqua;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.527);
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 5%);
+            overflow: hidden;
+
+            max-width: 1200px;
+            width: 90%;}
+
+        main h1{
+            font-family: "Big Shoulders Display", sans-serif;
+            font-size: 50px;
+            font-weight: bold;}
+
+        main p{
+            font-family: "Lexend Deca", sans-serif;
+            font-size: larger;
+            font-weight: 400;
+            line-height: 1.5em;
+            padding-bottom: 90px;}
+
+        section{
+            flex: 1;
+            padding: 50px 60px;
+            text-align: justify;}
+
+        .Sedans{
+            --colorbackground: hsl(31, 77%, 52%);
+            background-color: var(--colorbackground);}
+
+        .SUVs{
+            --colorbackground: hsl(184, 100%, 22%);
+            background-color: var(--colorbackground);}
+
+        .Luxury{
+            --colorbackground: hsl(179, 100%, 13%);
+            background-color: var(--colorbackground);}
+
+        .botao{
+            background-color: white;
+            padding: 10px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            color:var(--colorbackground);
+            font-weight: bold;}
+
+        .botao:hover{
+            text-decoration: underline;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;}
