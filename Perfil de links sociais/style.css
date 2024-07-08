@@ -7,10 +7,10 @@
 
 body{
     background-color: #141414;
-    margin: auto}
+    }
 
 div{
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     position: absolute;
     left: 50%;
