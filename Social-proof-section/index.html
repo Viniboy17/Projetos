@@ -6,42 +6,87 @@
     <title>Document</title>
 
 <style>
+*{
+}
 
-body{
+#tudo{
     position: absolute;
-    background-color: azure;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px 100px;
+    
+    
+
+    width: 72%;
+    height: 100vh;
+
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate( -50% , -50%);
 }
 
 header{
-    width: 350px;
-    margin-right: 100px;
+width: 385px;
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(80, 9, 102);
+    font-size: 45px;
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.estrelas{
+   margin-top: 45px;
+    
 }
 
 .estrelas p{
-    background-color: blue;
+    background-color: rgba(230, 228, 228, 0.822);
+    padding: 10px 100px;
+    color: rgb(80, 9, 102);
+    font-weight: bold;
+    border-radius: 5px;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .depoi{
-    background-color: blueviolet;
-    margin: 10px;
+    background-color: rgb(80, 9, 102);
     padding: 20px;
-    border-radius: 10px;
+    margin: 0px 0px 5px 0px;
+    border-radius: 5px;
+    max-width: 280px;
+    
 }
 
-main section{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
+.depoi p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
 }
 
-.depoimentos{
-    display: flex;
-    flex-direction: row;
+
+
+.depoi strong{
+    color: white;
 }
+
+.nome{
+    color: rgb(228, 74, 228);
+    font-weight: bold;
+}
+
 
 .pessoa{
     display: flex;
@@ -59,74 +104,68 @@ img{
 
 </head>
 <body>
-    
-    <header>
-        <h1>10,000+ of our users love our products.</h1>
-        <p>
-            We only provide great products combined with excellent customer service.
-            See what our satisfied customers are saying about our services.
-        </p>
-    </header>
-    
-    
-  
-        <section class="estrelas">
-            <p>5 Stars in Reviews</p>
-            <p>Rated 5 Stars in Report Guru</p>
-            <p>Rated 5 Stars in BestTech</p>
-        </section>
-
-    <main>
-        <div class="depoimentos">
-            <div class="depoi">
-                <div class="pessoa">
-                    
-                    <div class="foto"><img src="imagens/image-colton.jpg" alt="colton"></div>
-
-                    <div class="nome">
-                        <strong>Colton Smith</strong><br>
-                        Verified Buyer
+    <div id="tudo">
+        
+        <header>
+            <h1>10,000+ of our users love our products.</h1>
+            <p>
+                We only provide great products combined with excellent customer service.
+                See what our satisfied customers are saying about our services.
+            </p>
+        </header>
+        
+        
+            <section class="estrelas">
+                <p>5 Stars in Reviews</p>
+                <p>Rated 5 Stars in Report Guru</p>
+                <p>Rated 5 Stars in BestTech</p>
+            </section>
+        <main>
+        
+                <div class="depoi">
+                    <div class="pessoa">
+        
+                        <div class="foto"><img src="imagens/image-colton.jpg" alt="colton"></div>
+                        <div class="nome">
+                            <strong>Colton Smith</strong>
+                            <br>Verified Buyer
+                        </div>
                     </div>
+                    <p>
+                        "We needed the same printed design as the one we had ordered a week prior.
+                        Not only did they find the original order, but we also received it in time.
+                        Excellent!"
+                    </p>
                 </div>
-                <p>
-                    "We needed the same printed design as the one we had ordered a week prior.
-                    Not only did they find the original order, but we also received it in time.
-                    Excellent!"
-                </p>
-            </div>
-            
-            <div class="depoi">
-                <div class="pessoa">
-
-                    <div class="foto">
-                        <img src="imagens/image-irene.jpg" alt="colton">
+        
+                <div class="depoi">
+                    <div class="pessoa">
+                        <div class="foto">
+                            <img src="imagens/image-irene.jpg" alt="colton">
+                        </div>
+                        <div class="nome">
+                            <strong>Irene Roberts</strong>
+                            <br>Verified Buyer
+                        </div>
                     </div>
-
-                    <div class="nome">
-                        <strong>Irene Roberts</strong><br>
-                        Verified Buyer
+                    <p>
+                        "Customer service is always excellent and very quick turn around. Completely
+                        delighted with the simplicity of the purchase and the speed of delivery."
+                    </p>
+                </div>
+        
+                <div class="depoi">
+                    <div class="pessoa">
+                        <div class="foto"><img src="imagens/image-anne.jpg" alt="colton"></div>
+                        <div class="nome"><strong>Anne Wallace </strong>
+                            <br>Verified Buyer</div>
                     </div>
+                    <p>
+                        "Put an order with this company and can only praise them for the very high
+                        standard. Will definitely use them again and recommend them to everyone!"
+                    </p>
                 </div>
-                <p>
-                    "Customer service is always excellent and very quick turn around. Completely
-                    delighted with the simplicity of the purchase and the speed of delivery."
-                </p>
-            </div>
-            
-            <div class="depoi">
-                <div class="pessoa">
-
-                    <div class="foto"><img src="imagens/image-anne.jpg" alt="colton"></div>
-
-                    <div class="nome"><strong>Anne Wallace </strong><br>
-                        Verified Buyer</div>
-                </div>
-                <p>
-                    "Put an order with this company and can only praise them for the very high
-                    standard. Will definitely use them again and recommend them to everyone!"
-                </p>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
