@@ -78,13 +78,14 @@ section#illustration>img{
 
 
 
-@media screen and (min-width:1020px){
+@media screen and (min-width:1000px){
     body{
         background: url(../images/bg-desktop.svg) hsl(257, 40%, 49%);
         background-repeat: no-repeat;
         background-size: cover;}
 
     main{
+        margin-top: 0;
         background: none;
         width: 80vw;
         height: 90%;
