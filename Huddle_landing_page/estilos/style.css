@@ -23,6 +23,7 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+    margin-top: 20px;
     width: 306px;
     height: 100vh;
     padding: 25px;
