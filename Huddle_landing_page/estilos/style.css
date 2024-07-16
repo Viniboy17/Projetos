@@ -23,7 +23,7 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 306px;
     height: 100vh;
     padding: 25px;
@@ -78,7 +78,7 @@ section#illustration>img{
 
 
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:769px){
     body{
         background: url(../images/bg-desktop.svg) hsl(257, 40%, 49%);
         background-repeat: no-repeat;
