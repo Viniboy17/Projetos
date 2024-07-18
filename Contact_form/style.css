@@ -17,6 +17,7 @@ body{
     align-items: center;}
 
 main{
+    margin-top: 2%;
     padding: 24px;
     display: flex;
     flex-flow: column;
