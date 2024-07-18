@@ -98,6 +98,7 @@ input[type="radio"]:checked {accent-color: hsl(169, 82%, 27%);}
 
 #mensa>textarea{
     width: 98%;
+    height: 20vh;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
