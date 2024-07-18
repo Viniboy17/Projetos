@@ -9,7 +9,62 @@
         *{
             margin: 0;
             padding: 0;
-            display: inline-block;
+            box-sizing: border-box;;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(148, 38%, 91%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            padding: 40px;
+            display: flex;
+            flex-flow: column;
+            width: 50%;
+            background-color: white;
+        }
+
+        div{
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        input{
+            border-radius: 5px;
+            border: none;
+        }
+
+        form{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        form >#mail{
+            width: 100vw;
+        }
+
+        #mail>#iemail{
+            width:100% ;}
+
+        form #mensa{
+            width: 100vw;
+        }
+
+        form textarea{
+            width: 100%;
+        }
+
+        fieldset{
+            border: none;
+        }
+
+        #query{
+            border: 1px solid black;
         }
         
     </style>
@@ -17,29 +72,26 @@
 </head>
 <body>
     <main>
-        <h1>Contact Us</h1>
 
-        <form action="" method="post">
 
-            <p><label for="inome1">First Name</label><br> <input type="text" name="nome1" id="inome1" required></p>
+                <h1>Contact Us</h1>
+                <form action="" method="post">
+                    <div><label for="inome1">First Name</label><br> <input type="text" name="nome1" id="inome1" required></div>
 
-            <p><label for="inome2">Last Name</label><br>
-            <input type="text" name="nome2" id="inome2" required></p>
+                    <div><label for="inome2">Last Name</label><br>
+                    <input type="text" name="nome2" id="inome2" required></div>
+                    <div id="mail"><label for="iemail">Email Address</label><br>
+                    <input type="email" name="email" id="iemail" required></div>
+                    
+                        <label for="igeneral">Query Type</label><br>
+                        <div id="query"><input type="radio" name="querytype" id="igeneral" required> <label for="igeneral">General Enquiry</label></div>
+                        <div id="query"><input type="radio" name="querytype" id="isupport"> <label for="isupport">Support Request</label></div>
+                    
+                    <div id="mensa"><label for="imsg">Message </label><br><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea></div>
+                    <p><input type="submit" value="submit"></p>
+                </form>
 
-            <p><label for="iemail">Email Address</label><br>
-            <input type="email" name="email" id="iemail" required></p>
 
-            <fieldset>
-                <legend>Query Type</legend>
-                <p><input type="radio" name="querytype" id="igeneral" required> <label for="igeneral">General Enquiry</label></p>
-                <p><input type="radio" name="querytype" id="isupport"> <label for="isupport">Support Request</label></p>
-            </fieldset>
-
-            <p><label for="imsg">Message </label><br><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea></p>
-
-            <p><input type="submit" value="submit"></p>
-
-        </form>
             
     </main>
 </body>
