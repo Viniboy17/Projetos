@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+main{
+    padding: 24px;
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: white;}
+
+div{margin-bottom: 15px;}
+
+h1{ margin-bottom: 15px;}
+
+label, legend{ font-weight: 400; cursor: pointer;}
+
+fieldset{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;}
+
+/*------------------nome da pessoa------------------*/
+fieldset #pessoa{
+    width: 100%;
+    margin-right: 10px;
+}
+
+input[type="text"] { cursor: pointer; }
+
+#pessoa label{
+    display: block;
+    margin-bottom: 5px;}
+
+#pessoa > #inome1, #inome2{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;}
+
+#pessoa >#inome1:hover, #inome2:hover{border:1px solid hsl(169, 82%, 27%)}
+
+
+/*------------------E-mail da pessoa------------------*/
+#mail{width: 100%;}
+
+input[type="email"] { cursor: pointer; }
+
+#mail> label{ display: block; margin-bottom: 5px;}
+
+#mail>#iemail{
+    width: 98%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    outline: none;}
+
+#mail>#iemail:hover{ border:1px solid hsl(169, 82%, 27%)}
+
+
+/*------------------Query Type------------------*/
+fieldset>legend{ margin-bottom: 5px;}
+
+fieldset #query{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;}
+
+fieldset #query:hover{border:1px solid hsl(169, 82%, 27%)}
+
+input[type="radio"]:checked {accent-color: hsl(169, 82%, 27%);}
+
+
+/*------------------Mensagem------------------*/
+#mensa>label{display: block; margin-bottom: 5px;}
+
+#mensa>textarea{
+    width: 98%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;}   
+    
+#mensa>textarea:hover{border:1px solid hsl(169, 82%, 27%)}
+
+
+/*------------------Termo------------------*/
+input[type="checkbox"]:checked{accent-color: hsl(169, 82%, 27%);}
+
+
+/*------------------Botão de Submit------------------*/
+#submit > input{
+    width: 98%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;}
+
+#submit > input:hover{background-color: hsl(187, 24%, 22%);}
+
+
+/*------------------Versão para Cll------------------*/
+@media screen and (max-width:380px) {
+
+body{ width: 100%; height: 100%;}
+
+fieldset{flex-direction: column;}
+
+main{ width: 90%; height: 100%; }
+}
