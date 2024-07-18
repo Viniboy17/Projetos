@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Contact Us</h1>
+
+        <form action="" method="post">
+
+            <p><label for="inome1">First Name</label><br> <input type="text" name="nome1" id="inome1" required></p>
+
+            <p><label for="inome2">Last Name</label><br>
+            <input type="text" name="nome2" id="inome2" required></p>
+
+            <p><label for="iemail">Email Address</label><br>
+            <input type="email" name="email" id="iemail" required></p>
+
+            <fieldset>
+                <legend>Query Type</legend>
+                <p><input type="radio" name="querytype" id="igeneral" required> <label for="igeneral">General Enquiry</label></p>
+                <p><input type="radio" name="querytype" id="isupport"> <label for="isupport">Support Request</label></p>
+            </fieldset>
+
+            <p><label for="imsg">Message </label><br><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea></p>
+
+            <p><input type="submit" value="submit"></p>
+
+        </form>
+            
+    </main>
+</body>
+</html>
