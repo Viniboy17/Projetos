@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;}
+    margin: 20px 0px; }
 
 #tudo{
     border-radius: 15px;
@@ -28,7 +28,7 @@ picture>div{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 280px;
+    height: 83vh;
     }
 
 
