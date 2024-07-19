@@ -3,48 +3,54 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-.by a{
-    text-decoration: none;
-    color: black;}
-
-.by a:hover{
-    text-decoration: underline;}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 body{
     background-color: hsl(30, 38%, 92%);
-    position: relative;}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;}
 
 #tudo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 2%);
     border-radius: 15px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    flex-flow: column wrap;
     overflow: hidden;
-    max-width: 800px;
-    width: 100%;}
+    width: 375px;
+    }
 
-.imagem{
-    width: 400px;
-    background-color: rgb(175, 173, 173);
-    height: 100%;}
+picture>div{
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 280px;
+    }
 
-.corpo{
-    width: 340px;
+
+#corpo{
     background-color: white;
-    padding: 20px 30px;}
+    width: 100%;
+    padding: 20px;}
 
-.corpo>header>h1{
+#corpo>header>h1{
+    margin-bottom: 20px;
     font-family: "Fraunces", serif;
     font-weight: 700;
     width: 200px;}
 
-p{
+#corpo>header>p{
+    margin: 20px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;}
+
+main > section>p{
+    margin-bottom: 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 1.5em;}
@@ -81,9 +87,22 @@ p{
     background-color: hsl(158, 44%, 54%);
     text-decoration: underline;}
 
-footer p {
-    background-color:hsl(33, 7%, 76%);
-    color: white;
-    font-size: larger;
-    text-align: center;
-    text-decoration: none;}
+@media screen and (min-width:1024px){
+    #tudo{
+        margin: 30px;
+        display:flex;
+        flex-flow: row;
+        width: 50%;
+    }
+
+    picture>div{
+        background-image: url(images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 343px;
+        height: 78vh;
+        }
+
+
+}
+        
