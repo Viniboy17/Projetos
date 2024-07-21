@@ -16,7 +16,7 @@
 
             <fieldset>
                 <div id="pessoa">
-                <label for="inome1">First Name *</label><input type="text" name="nome1" id="inome1" required>
+                <label for="inome1">First Name *</label><input type="text" name="nome1" id="inome1" required onblur="embranco()">
                 </div>
                 
                 <div id="pessoa">
@@ -34,24 +34,67 @@
             <fieldset>
                 <legend>Query Type *</legend>
 
-                    <label for="igeneral" id="query">
-                        <input type="radio" name="querytype" id="igeneral" required> General Enquiry
+                    <label for="igeneral" class="query-label" id="query1" >
+                        <input type="radio" name="querytype" id="igeneral" required onclick="radioacionado()"> General Enquiry
                     </label>
 
-                <label for="isupport" id="query">
-                    <input type="radio" name="querytype" id="isupport"> Support Request
+                <label for="isupport" class="query-label" id="query2">
+                    <input type="radio" name="querytype" id="isupport" onclick="radioacionado()"> Support Request
                 </label>
             </fieldset>
             
-            <div id="mensa"><label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea></div>
+            <div id="mensa">
+                <label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea>
+            </div>
 
-            <div id="caixa"><input type="checkbox" name="consent" id="iconsent" required> 		<label for="iconsent">I consent to being contacted by the team *</label></div>
-            
+            <div id="caixa">
+                <input type="checkbox" name="consent" id="iconsent" required> 		
+                <label for="iconsent">I consent to being contacted by the team *</label>
+            </div>
 
-            <div id="submit"><input type="submit" value="submit"></div>
+            <div id="submit">
+                <input type="submit" value="submit">
+            </div>
 
         </form>
 
     </main>
+
+    <script>
+      function radioacionado(){
+            var igeneral = document.getElementById('igeneral');
+            var isupport = document.getElementById('isupport');
+            var query1 = document.getElementById('query1');
+            var query2 = document.getElementById('query2');
+            if (igeneral.checked) {
+                query1.style.backgroundColor = 'hsl(148, 38%, 91%)';
+                query2.style.backgroundColor = '';
+            } else if (isupport.checked) {
+                query2.style.backgroundColor = 'hsl(148, 38%, 91%)';
+                query1.style.backgroundColor = '';
+            }
+        }
+
+       /* function embranco(){
+            var inome1 = document.getElementById('inome1');
+            var inome1 = document.getElementById('inome1');
+
+            if (inome1.value === '') {
+                inome1.style.border = '1px solid hsl(0, 66%, 54%)';
+                inome1.style.border = '';
+            } else{
+                inome1.style.border = '';
+                
+            }
+
+            if (inome2.value === '') {
+                inome2.style.border = '1px solid hsl(0, 66%, 54%)';
+                inome1.style.border = '';
+            } else{
+                inome2.style.border = '';
+                
+            }
+        } */
+    </script>
 </body>
 </html>
