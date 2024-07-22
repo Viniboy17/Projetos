@@ -9,8 +9,8 @@
 }
 
 body{
+    height: 94vh;
     width: 100vw;
-    height: ;
     background-color: hsl(148, 38%, 91%);
     display: flex;
     justify-content: center;
@@ -27,15 +27,24 @@ main{
 
 div{margin-bottom: 15px;}
 
-h1{ margin-bottom: 15px;}
+#mensa{margin-top: 9px;}
+
+h1{ margin-bottom: 8px;}
 
 label, legend{ font-weight: 400; cursor: pointer;}
 
 fieldset{
+    margin-bottom: -10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     border: none;}
+
+.error{
+    display: block;
+    color: hsl(0, 66%, 54%);
+    font-size: 0.8em;
+}
 
 /*------------------nome da pessoa------------------*/
 fieldset #pessoa{
@@ -47,7 +56,7 @@ input[type="text"] { cursor: pointer; }
 
 #pessoa label{
     display: block;
-    margin-bottom: 5px;}
+}
 
 #pessoa > #inome1, #inome2{
     width: 100%;
@@ -79,7 +88,8 @@ input[type="email"] { cursor: pointer; }
 /*------------------Query Type------------------*/
 fieldset>legend{ margin-bottom: 5px;}
 
-fieldset .query-label{
+fieldset .query_label{
+    
     width: 100%;
     padding: 10px;
     border: 1px solid black;
@@ -88,7 +98,7 @@ fieldset .query-label{
     margin-bottom: 10px;
     cursor: pointer;}
 
-fieldset .query-label:hover{border:1px solid hsl(169, 82%, 27%)}
+fieldset .query_label:hover{border:1px solid hsl(169, 82%, 27%)}
 
 input[type="radio"]:checked {accent-color: hsl(169, 82%, 27%);}
 
@@ -124,6 +134,8 @@ input[type="checkbox"]:checked{accent-color: hsl(169, 82%, 27%);}
     cursor: pointer;}
 
 #submit > input:hover{background-color: hsl(187, 24%, 22%);}
+
+
 
 
 /*------------------Versão para Cll------------------*/

@@ -12,89 +12,60 @@
 
         <h1>Contact Us</h1>
 
-        <form action="" method="post">
+        <form action="" method="post" autocomplete="off">
 
             <fieldset>
                 <div id="pessoa">
-                <label for="inome1">First Name *</label><input type="text" name="nome1" id="inome1" required onblur="embranco()">
+                <label for="inome1">First Name *</label><input type="text" name="nome1" id="inome1">
+                <span id="error-inome1" class="error"></span>
                 </div>
                 
                 <div id="pessoa">
                     <label for="inome2">Last Name *</label>
-                    <input type="text" name="nome2" id="inome2" required>
+                    <input type="text" name="nome2" id="inome2">
+                    <span id="error-inome2" class="error"></span>
                 </div>
             </fieldset>
         
 
             <div id="mail">
                 <label for="iemail">Email Address *</label>
-                <input type="email" name="email" id="iemail" required>
+                <input type="email" name="email" id="iemail" placeholder="ex: juninho@gmail.com">
+                <span id="error-iemail" class="error"></span>
             </div>
         
-            <fieldset>
-                <legend>Query Type *</legend>
-
-                    <label for="igeneral" class="query-label" id="query1" >
-                        <input type="radio" name="querytype" id="igeneral" required onclick="radioacionado()"> General Enquiry
+                <fieldset>
+                    <legend>Query Type *</legend>
+                
+                    <label for="igeneral" class="query_label" id="query1" >
+                        <input type="radio" name="querytype" id="igeneral" onclick="radio_acionado()"> General Enquiry
                     </label>
-
-                <label for="isupport" class="query-label" id="query2">
-                    <input type="radio" name="querytype" id="isupport" onclick="radioacionado()"> Support Request
-                </label>
-            </fieldset>
+                
+                    <label for="isupport" class="query_label" id="query2">
+                        <input type="radio" name="querytype" id="isupport" onclick="radio_acionado()"> Support Request
+                    </label>
+                
+                </fieldset>
+                <span id="error-querytype" class="error"></span>
             
             <div id="mensa">
-                <label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10" required></textarea>
+                <label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                <span id="error-imsg" class="error"></span>
             </div>
 
             <div id="caixa">
-                <input type="checkbox" name="consent" id="iconsent" required> 		
+                <input type="checkbox" name="consent" id="iconsent" required="off"> 		
                 <label for="iconsent">I consent to being contacted by the team *</label>
+                <span id="error-iconsent" class="error"></span>
             </div>
 
             <div id="submit">
-                <input type="submit" value="submit">
+                <input type="submit" value="submit" onclick="em_branco()">
             </div>
 
         </form>
 
     </main>
-
-    <script>
-      function radioacionado(){
-            var igeneral = document.getElementById('igeneral');
-            var isupport = document.getElementById('isupport');
-            var query1 = document.getElementById('query1');
-            var query2 = document.getElementById('query2');
-            if (igeneral.checked) {
-                query1.style.backgroundColor = 'hsl(148, 38%, 91%)';
-                query2.style.backgroundColor = '';
-            } else if (isupport.checked) {
-                query2.style.backgroundColor = 'hsl(148, 38%, 91%)';
-                query1.style.backgroundColor = '';
-            }
-        }
-
-       /* function embranco(){
-            var inome1 = document.getElementById('inome1');
-            var inome1 = document.getElementById('inome1');
-
-            if (inome1.value === '') {
-                inome1.style.border = '1px solid hsl(0, 66%, 54%)';
-                inome1.style.border = '';
-            } else{
-                inome1.style.border = '';
-                
-            }
-
-            if (inome2.value === '') {
-                inome2.style.border = '1px solid hsl(0, 66%, 54%)';
-                inome1.style.border = '';
-            } else{
-                inome2.style.border = '';
-                
-            }
-        } */
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
