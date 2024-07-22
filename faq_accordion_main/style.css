@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/background-pattern-desktop.svg) hsl(275, 100%, 97%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main{
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.267);
+}
+
+h1{
+    color: hsl(292, 42%, 14%);
+    margin: 20px;
+}
+
+article{
+    color: hsl(292, 42%, 14%);
+    margin: 10px 0px;
+    font-size: larger;
+}
