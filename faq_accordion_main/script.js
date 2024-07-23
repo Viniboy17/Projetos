@@ -47,15 +47,4 @@ function clicou4(){
         img4.src='images/icon-minus.svg'
     }
 }
-    
-    
-
-
-    
-
-    
-
-    
-
-    
 
