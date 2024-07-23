@@ -35,7 +35,7 @@ main{
     margin-left: 20px;
 }
 
-#clicar{
+.clicar{
     display: flex;
     cursor: pointer;
     color: hsl(292, 42%, 14%);
@@ -57,7 +57,7 @@ p{
     display: block;
 }
 
-#clicar strong:hover{
+.clicar strong:hover{
     color: #AD28EB;
 }
 
