@@ -16,21 +16,61 @@ body{
 }
 
 main{
-    width: 40%;
-    margin: auto;
+    width: 48%;
     background: white;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.267);
 }
 
-h1{
+#h1{
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+#h1>h1{
     color: hsl(292, 42%, 14%);
-    margin: 20px;
+    margin-left: 20px;
 }
 
-article{
+#clicar{
+    display: flex;
+    cursor: pointer;
     color: hsl(292, 42%, 14%);
-    margin: 10px 0px;
+    margin:20px 0px;
     font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    width: 80%;
+    display: none;
+    text-align: justify;
+}
+
+#p1{
+    display: block;
+}
+
+#clicar strong:hover{
+    color: #AD28EB;
+}
+
+@media screen and (min-width:375px) and (max-width:667px){
+
+    body{
+    height: 0%;
+    background: url(images/background-pattern-mobile.svg) hsl(275, 100%, 97%);
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+    main{
+        width: 90%;
+    }
+    
 }
