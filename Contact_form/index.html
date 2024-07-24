@@ -8,64 +8,56 @@
     <title>Contact form</title>
 </head>
 <body>
-    <main>
-
-        <h1>Contact Us</h1>
-
-        <form action="" method="post" autocomplete="off">
-
-            <fieldset>
-                <div class="pessoa">
-                <label class="inome1">First Name *</label><input type="text" name="nome1" id="inome1">
-                <span id="error-inome1" class="error"></span>
-                </div>
-                
-                <div class="pessoa">
-                    <label for="inome2">Last Name *</label>
-                    <input type="text" name="nome2" id="inome2">
-                    <span id="error-inome2" class="error"></span>
-                </div>
-            </fieldset>
-        
-
-            <div id="mail">
-                <label for="iemail">Email Address *</label>
-                <input type="email" name="email" id="iemail" placeholder="ex: juninho@gmail.com">
-                <span id="error-iemail" class="error"></span>
-            </div>
-        
+        <main>
+            <h1>Contact Us</h1>
+            <form action="" method="post" autocomplete="off">
                 <fieldset>
-                    <legend>Query Type *</legend>
-                
-                    <label for="igeneral" class="query_label" id="query1" >
-                        <input type="radio" name="querytype" id="igeneral" onclick="radio_acionado()"> General Enquiry
-                    </label>
-                
-                    <label for="isupport" class="query_label" id="query2">
-                        <input type="radio" name="querytype" id="isupport" onclick="radio_acionado()"> Support Request
-                    </label>
-                
+                    <div class="pessoa">
+                    <label class="inome1">First Name *</label><input type="text" name="nome1" id="inome1">
+                    <span id="error-inome1" class="error"></span>
+                    </div>
+        
+                    <div class="pessoa">
+                        <label for="inome2">Last Name *</label>
+                        <input type="text" name="nome2" id="inome2">
+                        <span id="error-inome2" class="error"></span>
+                    </div>
                 </fieldset>
-                <span id="error-querytype" class="error"></span>
-            
-            <div id="mensa">
-                <label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-                <span id="error-imsg" class="error"></span>
-            </div>
-
-            <div id="caixa">
-                <input type="checkbox" name="consent" id="iconsent"> 		
-                <label for="iconsent">I consent to being contacted by the team *</label>
-                <span id="error-iconsent" class="error"></span>
-            </div>
-
-            <div id="submit">
-                <input type="submit" value="submit" onclick="em_branco()">
-            </div>
-
-        </form>
-
-    </main>
+        
+                <div id="mail">
+                    <label for="iemail">Email Address *</label>
+                    <input type="email" name="email" id="iemail" placeholder="ex: juninho@gmail.com">
+                    <span id="error-iemail" class="error"></span>
+                </div>
+        
+                    <fieldset>
+                        <legend>Query Type *</legend>
+        
+                        <label for="igeneral" class="query_label" id="query1" >
+                            <input type="radio" name="querytype" id="igeneral" onclick="radio_acionado()"> General Enquiry
+                        </label>
+        
+                        <label for="isupport" class="query_label" id="query2">
+                            <input type="radio" name="querytype" id="isupport" onclick="radio_acionado()"> Support Request
+                        </label>
+        
+                    </fieldset>
+                    <span id="error-querytype" class="error"></span>
+        
+                <div id="mensa">
+                    <label for="imsg">Message *</label><textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                    <span id="error-imsg" class="error"></span>
+                </div>
+                <div id="caixa">
+                    <input type="checkbox" name="consent" id="iconsent">
+                    <label for="iconsent">I consent to being contacted by the team *</label>
+                    <span id="error-iconsent" class="error"></span>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="submit" onclick="em_branco()">
+                </div>
+            </form>
+        </main>
     <script src="script.js"></script>
 </body>
 </html>

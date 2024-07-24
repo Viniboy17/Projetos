@@ -17,13 +17,14 @@ body{
     align-items: center;}
 
 main{
-    margin-top: 2%;
     padding: 24px;
     display: flex;
     flex-flow: column;
     width: 45%;
     border-radius: 15px;
     background-color: white;}
+
+
 
 div{margin-bottom: 15px;}
 
