@@ -1,5 +1,3 @@
-
-
 // Background color do input radio
 function radio_acionado(){
     var igeneral = document.getElementById('igeneral');
@@ -185,7 +183,4 @@ function saiu(){
                 document.getElementById('error-querytype').innerText = 'This field is required';
                 capocompleto = false}
             }
-
-            
-
 }
