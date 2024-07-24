@@ -15,6 +15,7 @@ function radio_acionado(){
 
 //Borda Vermelha e nome vermelho do campo em branco
 function em_branco(){
+    event.preventDefault();
 var inome1 = document.getElementById('inome1')
 var inome2 = document.getElementById('inome2')
 var iemail = document.getElementById('iemail')
