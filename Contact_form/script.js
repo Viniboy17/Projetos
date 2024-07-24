@@ -1,3 +1,5 @@
+
+
 // Background color do input radio
 function radio_acionado(){
     var igeneral = document.getElementById('igeneral');
@@ -22,6 +24,7 @@ var imsg = document.getElementById('imsg')
 var iconsent = document.getElementById('iconsent')
 var capocompleto = true
 
+
 inome1.addEventListener('mouseout',saiu)
 inome2.addEventListener('mouseout',saiu)
 iemail.addEventListener('mouseout',saiu)
@@ -45,10 +48,28 @@ if(inome2.value==''){
 }
 
 //Email Address 
-if(iemail.value==''){
-    iemail.style.border='1px solid hsl(0, 66%, 54%)'
+
+if (iemail.value === '') {
+    iemail.style.border = '1px solid hsl(0, 66%, 54%)';
     document.getElementById('error-iemail').innerText = 'This field is required';
-    capocompleto = false
+    capocompleto = false;
+} 
+
+else if (iemail.value === '@gmail.com') {
+    iemail.style.border = '1px solid hsl(0, 66%, 54%)';
+    document.getElementById('error-iemail').innerText = 'Need the full email';
+    capocompleto = false;
+} 
+
+else if (!iemail.value.includes('@gmail.com')) {
+    iemail.style.border = '1px solid hsl(0, 66%, 54%)';
+    document.getElementById('error-iemail').innerText = 'Email must contain @gmail.com';
+    capocompleto = false;
+} 
+
+else {
+    iemail.style.border = '1px solid black';
+    document.getElementById('error-iemail').innerText = '';
 }
 
 //Query Type
@@ -68,11 +89,16 @@ if(imsg.value==''){
 //checkbox
 if(!iconsent.checked){
     document.getElementById('error-iconsent').innerText = 'This field is required';
+    capocompleto = false
 }
 
 //alert
-if(capocompleto){
+if(capocompleto == true){
 alert('Thanks for completing the form. Well be in touch soon!')}
+
+if (capocompleto != true) {
+    event.preventDefault();
+}
 
 //mouseout pelos intens
 function saiu(){
@@ -96,14 +122,31 @@ function saiu(){
             capocompleto = false}
 
         //mauseout Email Address
-        if(iemail.value!=''){
-            iemail.style.border='1px solid black'
-            document.getElementById('error-iemail').innerText = ''; } 
+        if (iemail.value !== '') {
 
-        else{
-            iemail.style.border='1px solid hsl(0, 66%, 54%)'
+            if (iemail.value === '@gmail.com') {
+                iemail.style.border = '1px solid hsl(0, 66%, 54%)';
+                document.getElementById('error-iemail').innerText = 'Need the full email';
+                capocompleto = false;
+            } 
+            
+            else if (!iemail.value.includes('@gmail.com')) {
+                iemail.style.border = '1px solid hsl(0, 66%, 54%)';
+                document.getElementById('error-iemail').innerText = 'Email must contain @gmail.com';
+                capocompleto = false;
+            }
+            
+            else {
+                iemail.style.border = '1px solid black';
+                document.getElementById('error-iemail').innerText = '';
+            }
+        } 
+        
+        else {
+            iemail.style.border = '1px solid hsl(0, 66%, 54%)';
             document.getElementById('error-iemail').innerText = 'This field is required';
-            capocompleto = false}
+            capocompleto = false;
+        }
 
         //mauseout Message
         if(imsg.value!=''){
@@ -142,5 +185,7 @@ function saiu(){
                 document.getElementById('error-querytype').innerText = 'This field is required';
                 capocompleto = false}
             }
+
+            
 
 }

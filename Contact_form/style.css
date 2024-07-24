@@ -47,25 +47,25 @@ fieldset{
 }
 
 /*------------------nome da pessoa------------------*/
-fieldset #pessoa{
+fieldset .pessoa{
     width: 100%;
     margin-right: 10px;
 }
 
 input[type="text"] { cursor: pointer; }
 
-#pessoa label{
+.pessoa label{
     display: block;
 }
 
-#pessoa > #inome1, #inome2{
+.pessoa > #inome1, #inome2{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
     outline: none;}
 
-#pessoa >#inome1:hover, #inome2:hover{border:1px solid hsl(169, 82%, 27%)}
+.pessoa >#inome1:hover, #inome2:hover{border:1px solid hsl(169, 82%, 27%)}
 
 
 /*------------------E-mail da pessoa------------------*/
