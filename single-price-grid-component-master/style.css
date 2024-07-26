@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -14,13 +15,14 @@ body{
 }
 
 main{
-    background-color: blueviolet;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
+
+/*parte 1*/
 
 #pt1{
     width: 100%;
@@ -39,18 +41,86 @@ main{
 }
 
 #pt1>p{
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
 }
 
+
+/*parte 2*/
+
 #pt2{
-    padding: 20px;
+    padding: 25px;
     color: white;
     width: 50%;
     background-color: hsl(179, 62%, 43%);
 }
 
-#pt3{
-    width: 50%;
-   background-color: hsl(218, 22%, 67%);
+#money{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
 }
+
+#money .dindin{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.mes{
+    font-size: large;
+    color: hsl(178, 47%, 61%) ;
+}
+
+button{
+    margin: 20px 0px 0px 0px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+    border: 1px solid black;
+}
+
+
+/* parte 3*/
+#pt3{
+    height: 215px;
+    padding: 10px 20px;
+    width: 50%;
+    background-color: hsl(218, 22%, 67%);
+    color: white;
+    
+}
+
+#pt3 h4{
+    margin: 20px 0px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px) {
+   main{ 
+    border-radius: 10px;
+    width: 90%;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;}
+
+    #pt1 ,#pt2 ,#pt3{
+        width: 100%;
+    }
+}
+
+
