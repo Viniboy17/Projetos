@@ -139,4 +139,12 @@ function submitForm() {
     if (!campocompleto) {
         event.preventDefault()
     }
+
+    if(campocompleto){
+        document.getElementById('dados').style.display='none'
+        document.getElementById('completed').style.display='flex'
+    }else{
+         document.getElementById('dados').style.display='block'
+        document.getElementById('completed').style.display='none'
+    }
 }

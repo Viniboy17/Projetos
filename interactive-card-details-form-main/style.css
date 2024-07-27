@@ -132,7 +132,7 @@ main{
     width: 40%;
 }
 
-#dados .botao{
+#dados .botao, #completed .botao{
     cursor: pointer;
     border: none;
     color: white;
@@ -142,9 +142,32 @@ main{
     width: 100%;
 }
 
-#dados .botao:hover{
+#dados .botao:hover , #completed .botao:hover{
     background-color: hsl(278, 67%, 19%);
 }
+
+
+
+/*  Completed */
+#completed{
+    padding: 20px;
+    width: 30%;
+    display: none;
+    flex-flow:  column;
+    margin-left: 90px;
+    text-align: center;
+}
+
+#completed >img{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+#completed >p{
+    margin-bottom: 20px;
+}
+
 
 
 @media screen and (min-width:300px) and (max-width:500px){
@@ -211,6 +234,13 @@ main{
         margin-left: 0px;
         position: absolute;
         top:40%;
+    }
+
+    #completed {
+        margin: 0px 20px;
+        position: absolute;
+        top: 50%;
+        width: 90%;
     }
 }
 
@@ -282,6 +312,12 @@ main{
             margin-left: 0px;
             position: absolute;
             top:70%;
+        }
+        #completed {
+            margin: 0px 35px;
+            position: absolute;
+            top: 80%;
+            width: 90%;
         }
     }
 
