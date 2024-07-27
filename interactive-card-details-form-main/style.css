@@ -8,6 +8,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+span{
+    display: none;
+    margin-top: 5px;
+    color: red;
+    font-size: small;
+}
+
 
 /* Configurações do background e da centralização dos itens */
 body{
@@ -108,9 +115,9 @@ main{
 #dados input{
     width: 100%;
     margin-top: 5px;
-    
     border-radius: 7px;
     padding: 10px;
+    outline: none;
     border: 1px solid black;
 }
 
@@ -138,3 +145,141 @@ main{
 #dados .botao:hover{
     background-color: hsl(278, 67%, 19%);
 }
+
+
+@media screen and (min-width:300px) and (max-width:500px){
+    body{
+    width: 0%;
+    height: 0%;
+    background: url(images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       
+    }
+    main{
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #cardfull{
+        margin-left: 20px;
+    }
+
+    .cardfrent{
+        position: absolute;
+        top: 61%;
+        width: 292px;
+        height: 160px;
+        padding: 0px;
+    }
+
+    .cardfrent > img{
+        margin: 20px 0px 0px 20px;
+        width: 53px;
+    }
+
+    .cardfrent > #numero{
+        text-align: center;
+        margin-top: 28px;
+        font-size: x-large;
+        color: white;
+    }
+
+    .cardfrent>.nomeevalidade{
+        margin: 14px 18px;
+    }
+    .cardatras{
+        margin-left: 43px;
+        margin-top: 16px;
+        width: 292px;
+        height: 160px;
+        padding: 0px;
+    }
+
+    #codigocvc{
+        left: 81%;
+        top: 49%;
+    }
+
+    #dados{
+        width: 100%;
+        margin-left: 0px;
+        position: absolute;
+        top:40%;
+    }
+}
+
+
+@media screen and (min-width:501px) and (max-width:1000px){
+
+    body{
+        width: 0%;
+        height: 0%;
+        background: url(images/bg-main-mobile.png);
+        background-repeat: repeat-x;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+           
+        }
+        main{
+            width: 90%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #cardfull{
+            margin-left: 140px;
+        }
+    
+        .cardfrent{
+            position: absolute;
+            top: 61%;
+            width: 292px;
+            height: 160px;
+            padding: 0px;
+        }
+    
+        .cardfrent > img{
+            margin: 20px 0px 0px 20px;
+            width: 53px;
+        }
+    
+        .cardfrent > #numero{
+            text-align: center;
+            margin-top: 28px;
+            font-size: x-large;
+            color: white;
+        }
+    
+        .cardfrent>.nomeevalidade{
+            margin: 14px 18px;
+        }
+        .cardatras{
+            margin-left: 43px;
+            margin-top: 16px;
+            width: 292px;
+            height: 160px;
+            padding: 0px;
+        }
+    
+        #codigocvc{
+            left: 81%;
+            top: 49%;
+        }
+    
+        #dados{
+            width: 100%;
+            margin-left: 0px;
+            position: absolute;
+            top:70%;
+        }
+    }
+
