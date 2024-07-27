@@ -33,7 +33,7 @@
         <form id="dados" autocomplete="off">
             <div class="nomepessoa">
                 <label for="iname">Cardholder Name</label><br>
-                <input type="text" name="name" id="iname" placeholder="e.g. Jane Appleseed" minlength="10" maxlength="25">
+                <input type="text" name="name" id="iname" placeholder="e.g. Jane Appleseed" minlength="10" maxlength="20">
                 <span id="erro1">Can`t be blank</span>
             </div>
 
@@ -43,27 +43,30 @@
                 <label for="inumerocard">Card Number</label><br>
                 <input type="text" name="numerocard" id="inumerocard" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" minlength="19">
                 <span id="erro2">Can`t be blank</span>
-                <span id="erro2i">Letra</span>
+                <span id="erro2i">Wrong format, numbers only</span>
             </div>
 
             <br>
 
             <div class="datacard">
                 <label for="imes">Exp. Date (MM/YY)</label><br>
-                <input type="number" name="mes" id="imes" placeholder="MM">
-                <input type="number" name="ano" id="iano" placeholder="YY">
+                <input type="text" name="mes" id="imes" placeholder="MM" minlength="2" maxlength="2">
+                <input type="text" name="ano" id="iano" placeholder="YY" minlength="2" maxlength="2">
                 <span id="erro3">Can`t be blank</span>
+                <span id="erro3i">Wrong format, numbers only</span>
+                <span id="erro3ii">Wrong format, numbers only</span>
             </div>
 
             <br>
             <div class="seguranca">
                 <label for="icvc">CVC</label><br>
-                <input type="number" name="cvc" id="icvc" placeholder="e.g. 123" minlength="3" maxlength="3" >
+                <input type="text" name="cvc" id="icvc" placeholder="e.g. 123" minlength="3" maxlength="3" >
                 <span id="erro4">Can`t be blank</span>
+                <span id="erro4i">Wrong format, numbers only</span>
             </div>
 
             <br>
-            <input type="submit" value="Confirm" class="botao" id="botao" onclick="submitForm()">
+            <input type="button" value="Confirm" class="botao" id="botao" onclick="submitForm()">
         </form>
     </main>
     <!-- 0000 0000 0000 0000

@@ -46,19 +46,21 @@ icvc.addEventListener('input', function(){
 
 /* Adicionando as bordas vermelhas e mensagem de erro */
 function submitForm() {
+    
     var campocompleto = true
     var letras = /[a-zA-Z]/
-    var erronumero = letras.test(inumerocard.value)
+    var erronumero1 = letras.test(inumerocard.value)
+    var erronumero2 = letras.test(iano.value)
+    var erronumero3 = letras.test(imes.value)
+    var erronumero4 = letras.test(icvc.value)
 
     /*Nome da pessoa*/
     if (iname.value==''){
         iname.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
-        var erro1 = document.getElementById('erro1')
-        erro1.style.display='block'
+        document.getElementById('erro1').style.display='block'
     } else{
         iname.style.border=''
-        campocompleto= true
         document.getElementById('erro1').style.display = 'none'
     }
 
@@ -66,61 +68,75 @@ function submitForm() {
     if (inumerocard.value == '') {
         inumerocard.style.border = '1px solid hsl(0, 66%, 54%)'
         campocompleto = false
-        var erro2 = document.getElementById('erro2');
-        erro2.style.display = 'block'
+        document.getElementById('erro2').style.display = 'block'
     } else {
         inumerocard.style.border = ''
         document.getElementById('erro2').style.display = 'none'
     }
 
-    if (erronumero == true) {
+    if (erronumero1 == true) {
         inumerocard.style.border = '1px solid hsl(0, 66%, 54%)'
         campocompleto = false
-        var erro2i = document.getElementById('erro2i');
-        erro2i.style.display = 'block'
+        document.getElementById('erro2i').style.display = 'block'
     } else {
-        inumerocard.style.border = ''
         document.getElementById('erro2i').style.display = 'none'
-    }
-
-    /*Ano*/
-    if(iano.value==''){
-        iano.style.border='1px solid hsl(0, 66%, 54%)'
-        campocompleto = false
-        var erro3 = document.getElementById('erro3')
-        erro3.style.display='block'}
-    else{
-        imes.style.border=''
-        campocompleto= true
-        document.getElementById('erro3').style.display = 'none'
-    }
+    } 
 
     /*mes*/
     if(imes.value==''){
         imes.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
-        var erro3 = document.getElementById('erro3')
-        erro3.style.display='block'}
+        document.getElementById('erro3').style.display='block'}
     else{
         imes.style.border=''
-        campocompleto= true
         document.getElementById('erro3').style.display = 'none'
     }
+
+    if (erronumero3 == true) {
+        imes.style.border = '1px solid hsl(0, 66%, 54%)'
+        document.getElementById('erro3i').style.display = 'block'
+        campocompleto = false
+    } else {
+        document.getElementById('erro3i').style.display = 'none'
+    }  
+
+    /*Ano*/
+    if(iano.value==''){
+        iano.style.border='1px solid hsl(0, 66%, 54%)'
+        campocompleto = false
+        document.getElementById('erro3').style.display='block'}
+    else{
+        iano.style.border=''
+        document.getElementById('erro3').style.display = 'none'
+    }
+
+    if (erronumero2 == true) {
+        iano.style.border = '1px solid hsl(0, 66%, 54%)'
+        document.getElementById('erro3ii').style.display = 'block'
+        campocompleto = false
+    } else {
+        document.getElementById('erro3ii').style.display = 'none'
+    } 
 
     /*CVC*/
     if (icvc.value==''){
         icvc.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
-        var erro4 = document.getElementById('erro4')
-        erro4.style.display='block'
+        document.getElementById('erro4').style.display='block'
     } else{
         icvc.style.border=''
-        campocompleto= true
         document.getElementById('erro4').style.display = 'none'
     }
 
+    if (erronumero4 == true) {
+        icvc.style.border = '1px solid hsl(0, 66%, 54%)'
+        document.getElementById('erro4i').style.display = 'block'
+        campocompleto = false
+    } else {
+        document.getElementById('erro4i').style.display = 'none'
+    } 
 
-    if (!campocompleto){
+    if (!campocompleto) {
         event.preventDefault()
     }
 }
