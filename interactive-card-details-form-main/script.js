@@ -1,7 +1,7 @@
 /* Conectando os dados do form#dados com o as divs dos .cardfrent e .cardatras */
 
 
-/*Vinculando #iname com #nomepessoa*/
+//Vinculando #iname com #nomepessoa
 var iname = document.getElementById('iname')
 
 iname.addEventListener('input', function(){
@@ -9,7 +9,7 @@ iname.addEventListener('input', function(){
     nomepessoa.innerHTML = iname.value
 })
 
-/*Vinculando #inumerocard com #numero*/
+//Vinculando #inumerocard com #numero
 var inumerocard = document.getElementById('inumerocard')
 inumerocard.addEventListener('input', function(){
 
@@ -22,21 +22,21 @@ inumerocard.addEventListener('input', function(){
     numero.innerHTML = valorFormatado
 })
 
-/*Vinculando #imes com #mes*/
+//Vinculando #imes com #mes*/
 var imes = document.getElementById('imes')
 imes.addEventListener('input', function(){
     var mes = document.getElementById('mes')
     mes.innerHTML = imes.value
 })
 
-/*Vinculando #iano com #ano*/
+//Vinculando #iano com #ano
 var iano = document.getElementById('iano')
 iano.addEventListener('input', function(){
     var ano = document.getElementById('ano')
     ano.innerHTML = iano.value
 })
 
-/*Vinculando #icvc com #codigocvc*/
+//Vinculando #icvc com #codigocvc
 var icvc = document.getElementById('icvc')
 icvc.addEventListener('input', function(){
     var codigocvc = document.getElementById('codigocvc')
@@ -54,7 +54,7 @@ function submitForm() {
     var erronumero3 = letras.test(imes.value)
     var erronumero4 = letras.test(icvc.value)
 
-    /*Nome da pessoa*/
+    //Nome da pessoa
     if (iname.value==''){
         iname.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
@@ -64,7 +64,7 @@ function submitForm() {
         document.getElementById('erro1').style.display = 'none'
     }
 
-    /*Numero Cartão*/
+    //Numero Cartão
     if (inumerocard.value == '') {
         inumerocard.style.border = '1px solid hsl(0, 66%, 54%)'
         campocompleto = false
@@ -82,7 +82,7 @@ function submitForm() {
         document.getElementById('erro2i').style.display = 'none'
     } 
 
-    /*mes*/
+    //mes
     if(imes.value==''){
         imes.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
@@ -100,7 +100,7 @@ function submitForm() {
         document.getElementById('erro3i').style.display = 'none'
     }  
 
-    /*Ano*/
+    //Ano
     if(iano.value==''){
         iano.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
@@ -118,7 +118,7 @@ function submitForm() {
         document.getElementById('erro3ii').style.display = 'none'
     } 
 
-    /*CVC*/
+    //CVC
     if (icvc.value==''){
         icvc.style.border='1px solid hsl(0, 66%, 54%)'
         campocompleto = false
@@ -136,10 +136,12 @@ function submitForm() {
         document.getElementById('erro4i').style.display = 'none'
     } 
 
+    //Garantir que a pagina nao atualize
     if (!campocompleto) {
         event.preventDefault()
     }
 
+    //Mostrar o campo de completo quando os dados estiverem completados
     if(campocompleto){
         document.getElementById('dados').style.display='none'
         document.getElementById('completed').style.display='flex'
