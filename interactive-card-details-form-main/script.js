@@ -144,7 +144,7 @@ function submitForm() {
         document.getElementById('dados').style.display='none'
         document.getElementById('completed').style.display='flex'
     }else{
-         document.getElementById('dados').style.display='block'
+         document.getElementById('dados').style.display='flex'
         document.getElementById('completed').style.display='none'
     }
 }
