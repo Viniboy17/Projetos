@@ -79,7 +79,7 @@ button{
     padding: 10px 50px;
     border-radius: 5px;
     border: none;
-    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.356);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.226);
     background-color: hsl(71, 73%, 54%);
     color: white;
     font-weight: bold;
@@ -90,7 +90,7 @@ button{
 button:hover{
     background-color: white;
     color: hsl(71, 73%, 54%);
-    border: 1px solid black;
+    
 }
 
 
@@ -99,7 +99,7 @@ button:hover{
     height: 215px;
     padding: 10px 20px;
     width: 50%;
-    background-color: #49BEBD;
+    background-color: #98A6BD;
     color: white;
     
 }
