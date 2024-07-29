@@ -17,7 +17,7 @@ body{
 main{
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #0000004a;
+    box-shadow: 1px 1px 6px #0000004a;
     width: 45%;
     display: flex;
     justify-content: center;
