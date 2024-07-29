@@ -77,8 +77,9 @@ main{
 button{
     margin: 20px 0px 0px 0px;
     padding: 10px 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.356);
     background-color: hsl(71, 73%, 54%);
     color: white;
     font-weight: bold;
@@ -98,7 +99,7 @@ button:hover{
     height: 215px;
     padding: 10px 20px;
     width: 50%;
-    background-color: hsl(218, 22%, 67%);
+    background-color: #49BEBD;
     color: white;
     
 }
@@ -108,7 +109,7 @@ button:hover{
 }
 
 
-@media screen and (min-width:320px) and (max-width:600px) {
+@media screen and (min-width:320px) and (max-width:500px) {
    main{ 
     border-radius: 10px;
     width: 90%;
@@ -122,5 +123,19 @@ button:hover{
         width: 100%;
     }
 }
+
+@media screen and (min-width:501px) and (max-width:1200px) {
+    
+    body{
+        width: 96vw;
+        height: 120vh;
+    }
+
+    main{ 
+     width: 90%;
+     }
+ 
+    
+ }
 
 
