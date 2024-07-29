@@ -143,14 +143,37 @@ span section p{
 }
 
 
+
+
+@media screen and (min-width:600px)and (max-width:667px){
+    #eu {top: 105%;}
+
+    #tudo1{
+        width: 70%;
+    }
+
+    #tudo2{
+        width: 70%;
+    }
+    
+    
+}
+
 /*Resolução para PC */
-@media screen and (min-width:1025px){
+@media screen and (min-width:1000px){
     #tudo1{
         width: 28%;
     }
 
     #tudo2{
         width: 28%;
+    }
+
+    #eu {
+        position: absolute;
+        top: 90%;
+        text-align: center;
+        width: 70%;
     }
     
 }
