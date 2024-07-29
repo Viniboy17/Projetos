@@ -10,31 +10,35 @@
     }
 
 body{
+    width: 100vw;
+    height: 100vh;
     background-color: hsl(30, 38%, 92%);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px; }
+     }
 
 #tudo{
     border-radius: 15px;
-    flex-flow: column wrap;
+    display: flex;
+    flex-flow: row wrap;
     overflow: hidden;
-    width: 375px;
+    width: 50%;
+    height: 80%;
     }
 
-picture>div{
-    background-image: url(images/image-product-mobile.jpg);
+#poduto{
+    background-image: url(images/image-product-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 83vh;
+    width: 50%;
     }
+
 
 
 #corpo{
     background-color: white;
-    width: 100%;
+    width: 50%;
     padding: 20px;}
 
 #corpo>header>h1{
@@ -87,22 +91,27 @@ main > section>p{
     background-color: hsl(158, 44%, 54%);
     text-decoration: underline;}
 
-@media screen and (min-width:1024px){
+@media screen and (max-width:400px){
     #tudo{
-        margin: 30px;
-        display:flex;
-        flex-flow: row;
-        width: 50%;
+        display: block;
+        width: 95%;
+        height: 98%;
     }
 
-    picture>div{
-        background-image: url(images/image-product-desktop.jpg);
+    #poduto{
+        background-image: url(images/image-product-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 343px;
-        height: 78vh;
+        width: 100%;
+        height: 30%;
         }
+
+        #corpo{
+            width: 100%;
+            height: 70%;
+            }
 
 
 }
+
         
