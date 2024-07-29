@@ -119,7 +119,10 @@ button:hover{
 
 @media screen and (min-width:320px) and (max-width:500px) {
    
-
+    body{
+        width: 100%;
+        height: 100%;
+    }
 
     main{ 
     border-radius: 10px;
@@ -136,7 +139,10 @@ button:hover{
 }
 
 @media screen and (min-width:501px) and (max-width:1024px) {
-    
+    body{
+        width: 100%;
+        height: 100%;
+    }
 
 
     main{ 
