@@ -15,7 +15,7 @@ body{
 }
 
 main{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,12 @@ button:hover{
 
 
 @media screen and (min-width:320px) and (max-width:500px) {
-   main{ 
+   
+    body{
+        width: 95vw;
+    }
+
+    main{ 
     border-radius: 10px;
     width: 90%;
     height: 97%;
