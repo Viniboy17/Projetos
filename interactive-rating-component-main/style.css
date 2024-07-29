@@ -16,7 +16,7 @@ body{
     align-items: center;
 }
 
-.attribution{
+#eu {
     position: absolute;
     top: 90%;
     text-align: center;
@@ -40,7 +40,7 @@ picture #star{
     width: 47px;
 }
 
-h2{
+h1{
     padding: 20px 0px;
     color: white;
 }
@@ -111,7 +111,7 @@ form{
     padding: 25px;
 }
 
-span h2{
+span h1{
     text-align: center;
 }
 
