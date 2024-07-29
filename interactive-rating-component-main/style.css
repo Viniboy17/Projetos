@@ -1,0 +1,156 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(217, 12%, 63%);
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution{
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    width: 70%;
+}
+
+
+/* Estilo do main para versão de Cll */
+#tudo1{
+    display: block;
+    width: 90%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+picture #star{
+    background-color: hsl(211deg 19.36% 22.99%);
+    border-radius: 50%;
+    padding: 14px;
+    width: 47px;
+}
+
+h2{
+    padding: 20px 0px;
+    color: white;
+}
+
+section{
+    text-align: justify;
+}
+
+form{
+    display: flex;
+    justify-content:  space-between;
+    padding: 20px 0px;
+}
+
+.cescolha{
+    list-style: none;
+    background-color: hsl(211deg 19.36% 22.99%);
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    padding: 14px;
+    width: 47px;
+}
+
+.redondo{
+    display: none; 
+}
+
+.cescolha:hover{
+    background-color: white;
+    color: black;
+}
+
+.redondo:checked + .cescolha {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#submit{
+    color: black;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    font-size: large;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: white;
+}
+
+#submit:active{
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+/* Estilo do span para versão de cll */
+
+#tudo2{
+    display: none;
+    width: 90%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+span h2{
+    text-align: center;
+}
+
+picture #ilustracao{
+    display: block;
+    margin: auto;
+}
+#msg{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color: hsl(211deg 19.36% 22.99%);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.178);
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    color: hsl(25, 97%, 53%);
+}
+
+#msg #esc{
+    color: hsl(25, 97%, 53%);
+    margin: 0px 4px
+}
+
+span section p{
+    text-align: center;
+}
+
+
+/*Resolução para PC */
+@media screen and (min-width:1025px){
+    #tudo1{
+        width: 28%;
+    }
+
+    #tudo2{
+        width: 28%;
+    }
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="tudo1">
+    <picture>
+        <img src="images/icon-star.svg" alt="Icon Star" id="star">
+    </picture>
+    
+    <h2>How did we do?</h2>
+
+    <section>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+    </section>
+
+    <form action="#" method="get" id="form">
+        <input type="radio" name="escolha" id="escolha1" class="redondo"><label for="escolha1" class="cescolha">1</label>
+        <input type="radio" name="escolha" id="escolha2" class="redondo"><label for="escolha2" class="cescolha">2</label>
+        <input type="radio" name="escolha" id="escolha3" class="redondo"><label for="escolha3" class="cescolha">3</label>
+        <input type="radio" name="escolha" id="escolha4" class="redondo"><label for="escolha4" class="cescolha">4</label>
+        <input type="radio" name="escolha" id="escolha5" class="redondo"><label for="escolha5" class="cescolha">5</label>
+    </form>
+
+    <input type="button" value="SUBMIT" id="submit" onclick="submit()">
+  </main>
+
+  <span id="tudo2">
+    <picture>
+        <img src="images/illustration-thank-you.svg" alt="Thank You!" id="ilustracao">
+    </picture>
+     
+    <div id="msg">
+        You selected <div id="esc"></div> out of 5
+    </div>
+          
+      
+      <h2>Thank you!</h2>
+      <section>
+          <p>
+              We appreciate you taking the time to give a rating. If you ever need more support,
+              don’t hesitate to get in touch!
+          </p>
+      </section>
+
+  </span>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Viniboy17">Vinicius LIma</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
