@@ -48,6 +48,7 @@ main{
 /*parte 2*/
 
 #pt2{
+    height: 230px;
     padding: 25px;
     color: white;
     width: 50%;
@@ -96,6 +97,7 @@ button:hover{
 
 /* parte 3*/
 #pt3{
+    height: 230px;
     padding:25px;
     width: 50%;
     background-color: #98A6BD;
@@ -115,8 +117,9 @@ button:hover{
 @media screen and (min-width:320px) and (max-width:500px) {
    
     body{
-        width: 95vw;
+        width: 100%;
     }
+
 
     main{ 
     border-radius: 10px;
@@ -132,16 +135,12 @@ button:hover{
     }
 }
 
-@media screen and (min-width:501px) and (max-width:1200px) {
+@media screen and (min-width:501px) and (max-width:1024px) {
     
-    body{
-        width: 96vw;
-        height: 120vh;
-    }
 
     main{ 
-     width: 90%;
-     }
+        width: 80%;
+        }
  
     
  }
