@@ -91,27 +91,36 @@ main > section>p{
     background-color: hsl(158, 44%, 54%);
     text-decoration: underline;}
 
-@media screen and (max-width:400px){
-    #tudo{
-        display: block;
-        width: 95%;
-        height: 98%;
+    @media screen and (min-width:300px) and (max-width:500px){
+    
+        #tudo{
+            display: block;
+            width: 95%;
+            height: 98%;
     }
 
-    #poduto{
-        background-image: url(images/image-product-mobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 30%;
-        }
+        #poduto{
+            background-image: url(images/image-product-mobile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 30%;
+            }
 
         #corpo{
             width: 100%;
             height: 70%;
             }
+}
 
-
+@media screen and (min-width:501px) and (max-width:1024px){
+    body{
+        width: 95%;
+        height: 100%;
+    }
+    #tudo{
+    width: 90%;
+    height: 95%;}
 }
 
         
