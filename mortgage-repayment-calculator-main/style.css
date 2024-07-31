@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color:white;
+}
+
+span{
+    display: none;
+    margin-bottom: 18px;
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+footer{
+    color: white;
+    background-color: hsl(202, 55%, 16%);
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.attribution{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.attribution>p>a{
+    text-decoration: none;
+}
+
+/*-------------------------TEXTE--------------------------------*/
+
+/*amount*/
+.amount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount .simbolo {
+    padding-top: 5px;
+    border-radius: 4px;
+    height: 32px;
+    width: 48px;
+    background-color: hsl(202, 86%, 94%);
+    position: absolute;
+    align-self: flex-start;
+    margin-left: 1px;
+    top: 25px;
+    font-size: 16px;
+    pointer-events: none;
+    text-align: center
+}
+
+.amount input {
+    padding-left: 70px; /* Espaço suficiente para o símbolo £ */
+    box-sizing: border-box;
+}
+
+/*yars*/
+.anos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.anos .simbolo {
+    padding-top: 5px;
+    border-radius: 4px;
+    height: 32px;
+    width: 48px;
+    background-color: hsl(202, 86%, 94%);
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 1px;
+    top: 25px;
+    font-size: 16px;
+    pointer-events: none;
+    text-align: center
+}
+
+.anos input {
+    padding-right: 55px; /* Espaço suficiente para o símbolo £ */
+    box-sizing: border-box;
+}
+
+/*Porcentagem*/
+.porcentagem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.porcentagem .simbolo {
+    padding-top: 5px;
+    border-radius: 4px;
+    height: 32px;
+    width: 48px;
+    background-color: hsl(202, 86%, 94%);
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 1px;
+    top: 25px;
+    font-size: 16px;
+    pointer-events: none;
+    text-align: center
+}
+
+.porcentagem input {
+    padding-right: 55px; /* Espaço suficiente para o símbolo £ */
+    box-sizing: border-box;
+}
+
+
+/*---------------------Estilos do p1------------------------------*/
+.p1{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+}
+
+#inicio> h1{
+    font-size: x-large;
+}
+
+/*Estilo do botao clean */
+#inicio>.clean{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    text-align: left;
+    text-decoration: underline;
+    margin: 10px 0px 25px 0px;
+}
+
+.clean:hover{
+    font-weight: bold;
+}
+
+.clean:active{
+    font-weight: 400;
+}
+
+/* Estilo dos inputs dos dados */
+#inputs{
+    display: flex;
+    flex-flow: column;
+}
+.inputdados{
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0px 0px 0px;
+    border: 1px solid black;
+}
+.inputdados:hover{
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+/*Estilo dos Radios */
+#radioo{
+    display: flex;
+    flex-flow: column;
+}
+
+.escolha{
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.escolha:hover{
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+input[type="radio"]:checked {accent-color: hsl(61, 70%, 52%);}
+
+/*Estilo do Botao de calculo */
+#botaocalculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(61, 70%, 52%);
+    font-weight: bold;
+}
+
+#botaocalculo img{
+    margin: 0px 10px 0px -20px;
+}
+
+#botaocalculo:hover{
+    background-color: hsl(61, 64%, 63%);
+}
+
+#botaocalculo:active{
+    background-color: hsl(61, 70%, 52%);
+}
+
+/*---------------------Estilos do p2------------------------------*/
+#p2{
+    background-color: hsl(202, 55%, 16%);
+}
+
+/*Estilo da imagem */
+picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+img{text-align: center;}
+
+/*Estilo do Titulo h2 */
+#p2 h2{
+    color: white;
+    text-align: center;
+}
+
+/* Estilo dos paragrafos */
+#p2 p{
+    color: hsl(203, 41%, 72%);
+    text-align: center;
+    padding: 20px;
+}
+
+/*---------------------Estilos do p3------------------------------*/
+
+#p3{
+    background-color: hsl(202, 55%, 16%);
+    display: none;
+}
+
+/*Estilo do Titulo h2 */
+#p3 h2{
+    color: white;
+    margin: 25px 0px 0px 25px;
+}
+
+/* Estilo dos paragrafos */
+#p3 p{
+    color: hsl(203, 41%, 72%);
+    text-align: left;
+    padding: 25px;
+}
+
+/* Estilo do Resultados */
+#resu{
+    background-color: hsl(203, 57%, 7%);
+    margin: 10px 25px 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0px -3px 0px hsl(61, 70%, 52%);
+}
+
+/* Estilo do valor 1 do resultado */
+#valor1{
+    color:  hsl(61, 70%, 52%);
+    font-size: xx-large;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(203, 41%, 72%);
+}
+
+/*Estilo do valor 2 do resultado*/
+#valor2{
+    color:  white;
+    font-size: x-large;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -15px;
+    padding-bottom: 15px;
+}
+
+/*---------------------Estilos versão de PC------------------------------*/
+@media screen and (min-width:1000px){
+    body{
+        height: 100vh;
+        background-color: hsl(202, 86%, 94%);
+    }
+
+    main{
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.384);
+    }
+
+    .amount .simbolo, .anos .simbolo, .porcentagem .simbolo{
+        top:30px;
+    }
+
+    footer{
+        margin-top: 30px;
+        color: black;
+        background-color: hsl(202, 86%, 94%);
+        height: 0;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .attribution{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .attribution p{
+        margin-right: 5px;
+    }
+    
+
+/*============ P1==========*/
+    
+    .p1{
+        width: 50%;
+        height: 100%;
+        flex-flow: row wrap;
+        padding: 35px;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+
+    #inicio{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+/*Amount*/
+    .p1>.amount{
+        width: 100%;
+    }
+
+    .amount>#iamount{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+/*Anos e Porcentagem*/
+    .p1 >.anos{
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .anos>#ianos{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .p1>.porcentagem{
+        width: 46%;
+    }
+
+    .porcentagem>#iporcentagem{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    } 
+
+/*Radio*/
+    #radioo{
+        width: 100%; 
+    }
+
+    #irepayment , #interestonly{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #escolha1{
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+/*Botao*/
+    #botaocalculo{
+        height: 10%;
+        margin-top: 0px;
+        padding: 0px;
+        width: 70%;
+    }
+
+/*============ P2==========*/
+    #p2{
+        width: 50%;
+        border-radius: 0px 0px 0px 50px;
+    }
+    #p2 div{
+        margin-top: 20%;
+    }
+
+/*============ P2==========*/
+    #p3{
+        width: 50%;
+        border-radius: 0px 0px 0px 50px;
+    }
+}
