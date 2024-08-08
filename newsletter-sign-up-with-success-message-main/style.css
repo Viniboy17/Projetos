@@ -86,7 +86,7 @@ main{
     outline: none;
 }
 
-#botao{
+.botao1 , .botao2{
     cursor: pointer;
     width: 100%;
     height: 40px;
@@ -206,7 +206,7 @@ padding: 60px;
         height: 45px;
     }
 
-    #botao{
+    .botao1 , .botao2{
         height: 45px;
     }
 
